@@ -1,0 +1,22 @@
+version: '3'
+services:
+  devops:
+    image: bhaskarone/java:latest
+    ports:
+      - "90:80"
+    deploy:
+      replicas: 3
+
+  aws:
+    image:  bhaskarone/azure:latest
+    ports:
+      - "91:80"
+    deploy:
+      replicas: 3
+
+  datascience:
+    image:  bhaskarone/dockerproject:latest
+    ports:
+      - "92:80"
+    deploy:
+      replicas: 3
