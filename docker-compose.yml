@@ -15,7 +15,7 @@ services:
       replicas: 3
 
   datascience:
-    image:  bhaskarone/dockerproject:latest
+    image:  bhaskarone/aws:latest
     ports:
       - "89:80"
     deploy:
